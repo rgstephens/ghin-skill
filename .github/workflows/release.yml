@@ -36,12 +36,11 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: bump version to ${{ steps.version.outputs.version }}"
           git push origin main
 
-      - name: Update ClawHub version
+      - name: Publish to ClawHub
         env:
           CLAWHUB_API_TOKEN: ${{ secrets.CLAWHUB_API_TOKEN }}
         run: |
-          curl -fsSL -X PATCH \
+          curl -fsSL -X POST \
             -H "Authorization: Bearer ${CLAWHUB_API_TOKEN}" \
-            -H "Content-Type: application/json" \
-            -d "{\"version\": \"${{ steps.version.outputs.version }}\"}" \
-            "https://clawhub.ai/api/v1/skills/golf-ghin"
+            -F "file=@SKILL.md" \
+            "https://clawhub.ai/api/v1/skills"

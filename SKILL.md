@@ -2,22 +2,21 @@
 name: golf-ghin
 description: Look up golf handicap information from GHIN (Golf Handicap and Information Network). Use when the user asks about a golfer's handicap index, GHIN number, recent scores, score differentials, or wants to search for a golfer by name.
 metadata:
-  {
-    "nanobot":
-      {
-        "emoji": "⛳",
-        "requires": { "bins": ["ghin"] },
-        "install":
-          [
-            {
-              "id": "curl",
-              "kind": "script",
-              "label": "Install ghin CLI",
-              "url": "https://raw.githubusercontent.com/rgstephens/ghin-skill/main/install.sh",
-            },
-          ],
-      },
-  }
+  openclaw:
+    emoji: "⛳"
+    requires:
+      env:
+        - GHIN_ID
+        - GHIN_PASSWORD
+      bins:
+        - ghin
+    primaryEnv: GHIN_ID
+    emoji: "⛳"
+    homepage: https://github.com/rgstephens/ghin-skill
+    install:
+      - kind: script
+        label: Install ghin CLI
+        url: https://raw.githubusercontent.com/rgstephens/ghin-skill/main/install.sh
 ---
 
 <!-- Version: 0.2.2 -->
