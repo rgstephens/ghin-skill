@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/github/v/tag/rgstephens/ghin-skill?label=version&sort=semver)
 
-A [ClawHub](https://clawhub.io/skills/golf-ghin) skill for the [GHIN](https://www.ghin.com) golf handicap system. Look up golfer handicap indexes, view recent scores, search for golfers by name, and track followed golfers.
+A [ClawHub](https://clawhub.ai/skills/golf-ghin) skill for the [GHIN](https://www.ghin.com) golf handicap system. Look up golfer handicap indexes, view recent scores, search for golfers by name, and track followed golfers.
 
 ## Installation
 
