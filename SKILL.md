@@ -11,7 +11,6 @@ metadata:
       bins:
         - ghin
     primaryEnv: GHIN_ID
-    emoji: "⛳"
     homepage: https://github.com/rgstephens/ghin-skill
     install:
       - kind: script
