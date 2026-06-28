@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Golf",
+      "description": "Skills for golf handicap lookup and score tracking via the GHIN system.",
+      "skills": ["golf-ghin"]
+    }
+  ]
+}
